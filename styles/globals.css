@@ -290,3 +290,22 @@ html {
   z-index: -1;
   will-change: opacity, transform;
 }
+/* Responsive Grid Layout for Product Catalog */
+
+/* Default for small mobile devices (e.g., iPhone SE) - 2 columns */
+@media screen and (max-width: 767px) {
+  .product-catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets in portrait mode (e.g., iPad) - 3 columns */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktops and high-resolution screens - 4 columns */
+@media screen and
+
