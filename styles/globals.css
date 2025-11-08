@@ -290,22 +290,65 @@ html {
   z-index: -1;
   will-change: opacity, transform;
 }
-/* Responsive Grid Layout for Product Catalog */
 
-/* Default for small mobile devices (e.g., iPhone SE) - 2 columns */
-@media screen and (max-width: 767px) {
-  .product-catalog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* === 🍎 Universal & Safari Robustness Fixes (Add this at the top of your main stylesheet) === */
+
+/* The crucial fix for layout consistency: ensures padding/border is inside the element's width */
+*, *::before, *::after {
+  box-sizing: border-box; 
 }
 
-/* Tablets in portrait mode (e.g., iPad) - 3 columns */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* Kills any chance of unintended horizontal scrolling on mobile/Safari */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+/* === PRODUCT CATALOG GRID STYLES === */
+
+/* 📱 Default for smaller screens (Mobile First approach) - 2 columns */
+.product-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+  /* Use viewport width (vw) for a gap that scales perfectly on mobile/Safari */
+  gap: 15px 1.5vw; 
+  /* Added left/right padding to the grid to prevent items from touching the screen edge */
+  padding: 0 1vw; 
+}
+
+/* 🖼️ Robustness for Product Images/Content (Essential for Safari) */
+/* Ensure content inside the grid item (the product card) never causes overflow */
+.product-catalog-grid > div { /* Assuming the direct children are your product cards */
+  overflow: hidden; 
+}
+.product-catalog-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 💻 Tablets in portrait and large phones (768px and up) - 3 columns */
+@media screen and (min-width: 768px) {
   .product-catalog-grid {
     grid-template-columns: repeat(3, 1fr);
+    /* Switch back to a fixed pixel gap for better visual stability on larger screens */
+    gap: 20px; 
+    padding: 0 20px; /* Add desktop-style padding */
   }
 }
 
-/* Desktops and high-resolution screens - 4 columns */
-@media screen and
+/* 🖥️ Desktops and larger screens (1025px and up) - 4 columns */
+@media screen and (min-width: 1025px) {
+  .product-catalog-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
+/* 📺 Optional: For very large screens (1440px and up) - 5 columns */
+@media screen and (min-width: 1440px) {
+  .product-catalog-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
