@@ -113,7 +113,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
           >
             <div className="prose prose-invert max-w-none">
               <p className="text-lg mb-8 leading-relaxed" style={{ color: '#E0E0E0' }}>
-                <strong style={{ color: '#178B8D' }}>Last Updated:</strong> [Date to be added]
+                <strong style={{ color: '#178B8D' }}>Last Updated:</strong> November 7, 2025
               </p>
 
               <div className="space-y-8">
@@ -122,8 +122,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                     Introduction
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: '#C0C0C0' }}>
-                    [Privacy policy content will be added here. This is a placeholder text that explains 
-                    how Silver Essence collects, uses, and protects customer information.]
+                    This policy outlines how Silver Essence collects, uses, and protects your personal information when you use our website and services. We are committed to safeguarding your privacy.
                   </p>
                 </section>
 
@@ -132,7 +131,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                     Information We Collect
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: '#C0C0C0' }}>
-                    [Content about what information is collected from customers will be added here.]
+                    We collect information necessary to process your transactions and manage your account. This typically includes your name, shipping address, email address, and payment details (processed securely by our payment partners). We also collect basic data about your browsing session to improve our service.
                   </p>
                 </section>
 
@@ -141,8 +140,13 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                     How We Use Your Information
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: '#C0C0C0' }}>
-                    [Content about how customer information is used will be added here.]
+                    We use your information for the following primary purposes:
                   </p>
+                  <ul className="list-disc list-inside mt-4 space-y-2 text-lg" style={{ color: '#C0C0C0' }}>
+                    <li>To process and fulfill your orders and transactions.</li>
+                    <li>To communicate with you regarding your orders or inquiries.</li>
+                    <li>To improve our website functionality and customer experience.</li>
+                  </ul>
                 </section>
 
                 <section>
@@ -150,7 +154,7 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                     Data Security
                   </h2>
                   <p className="text-lg leading-relaxed" style={{ color: '#C0C0C0' }}>
-                    [Content about data security measures will be added here.]
+                    We implement a variety of security measures, including encryption and secure protocols, to maintain the safety of your personal data. While no method is 100% secure, we strive to protect your information against unauthorized access.
                   </p>
                 </section>
 
@@ -164,9 +168,6 @@ export function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                   <ul className="mt-4 space-y-2">
                     <li style={{ color: '#178B8D' }}>
                       Email: sliveressence00@gmail.com
-                    </li>
-                    <li style={{ color: '#178B8D' }}>
-                      Phone: +968 78720330
                     </li>
                   </ul>
                 </section>
