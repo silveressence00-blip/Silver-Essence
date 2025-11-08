@@ -141,21 +141,28 @@ export function AboutUs({ onBack }: AboutUsProps) {
               </p>
 
               <p className="text-lg mb-6 leading-relaxed" style={{ color: '#C0C0C0' }}>
-                Each piece in our collection is meticulously crafted from premium 925 sterling silver, 
-                with options for luxurious 18K gold or rose gold plating. Our designs are inspired by 
-                Italian craftsmanship and modern aesthetics, creating jewelry that tells your unique story.
+               We believe that jewelry shouldn't be reserved for special occasions—it should be a part of your 
+               daily life. At Silver essence, our philosophy is simple: create elegant, durable silver jewelry that
+               tells your story and can be cherished for decades
               </p>
 
               <p className="text-lg mb-6 leading-relaxed" style={{ color: '#C0C0C0' }}>
-                At Silver Essence, we believe that jewelry is more than just an accessory—it's an 
-                expression of your personality, a celebration of special moments, and a legacy to be 
-                passed down through generations.
+                Our Founder, <span style={{ color: '#178B8D', fontWeight: '600' }}>Danish Riaz</span>, started this store after realizing that the best pieces in their personal
+                collection were those made of solid, time-tested silver. They were inspired to design a line that
+                combined the heirloom quality of classic silver with modern, minimalist sensibilities.
+                We choose to work exclusively with Silver (.925) because it is the "forever metal". It's naturally
+                brilliant, hypoallergenic, and uniquely capable of taking on the soft patina of time, making each
+                piece truly unique to its wearer.
               </p>
 
               <p className="text-lg leading-relaxed" style={{ color: '#C0C0C0' }}>
-                We are committed to providing you with exceptional quality, personalized service, and 
-                pieces that you'll treasure forever. Thank you for choosing Silver Essence to be part 
-                of your journey.
+                Lead Designer <span style={{ color: '#178B8D', fontWeight: '600' }}>Furqan</span>, 
+                The establisher and lead designer here at Silver Essence. This store is
+                truly a labor of love, driven by my fascination with how simple lines and quality metals can transform an outfit and boost confidence
+                Thank you for visiting, and for supporting a small business built on passion and lasting quality. 
+                hope our jewelry helps you celebrate the big moments and find joy in the everyday moments, too.
+                Explore our newest collection of everyday Silver Essence.
+            
               </p>
             </div>
           </div>
